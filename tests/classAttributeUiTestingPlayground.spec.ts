@@ -8,7 +8,7 @@ test.afterEach(async ({ page }) => {
     await page.close();
 });
 
-test("Record 2 consecutive link clicks.", async ({ page }) => {
+test("Record primary (blue) button click and press ok in alert popup.", async ({ page }) => {
     const button = page.locator("button.btn-primary");
     await expect(await button).toBeVisible();
     await expect(await button).toBeEnabled();

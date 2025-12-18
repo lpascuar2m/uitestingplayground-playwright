@@ -8,7 +8,7 @@ test.afterEach(async ({ page }) => {
     await page.close();
 });
 
-test("Record 2 consecutive link clicks.", async ({ page }) => {
+test("Record button click.", async ({ page }) => {
     const button = page.getByRole('button', { name: 'Button with Dynamic ID' });
     await expect(await button).toBeVisible();
     await expect(await button).toBeEnabled();
