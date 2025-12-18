@@ -66,7 +66,7 @@ export default defineConfig({
     // },
     {
       name: 'Google Chrome',
-      use: { ...devices['Desktop Chrome'], channel: 'chrome', baseURL: 'http://uitestingplayground.com' },
+      use: { ...devices['Desktop Chrome'], channel: 'chrome', baseURL: 'http://uitestingplayground.com', testIdAttribute: 'id' },
     },
   ],
 
