@@ -31,6 +31,4 @@ test("Create a test that clicks Start button and then waits for the progress bar
     await expect(stopbtn).toBeVisible();
     await expect(stopbtn).toBeEnabled();
     await stopbtn.click();
-
-    await page.waitForTimeout(5000);
 });
